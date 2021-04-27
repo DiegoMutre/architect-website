@@ -19,3 +19,89 @@ a {
 }
 
 /* End of Common Styles */
+
+/* Hamburger Menu Styles */
+
+.hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+    transition: right 0.7s;
+    width: 3rem;
+}
+
+.change .hamburger-menu {
+    right: 80vw;
+}
+
+@media (min-width: 768px) {
+    .change .hamburger-menu {
+        right: 33rem;
+    }
+}
+
+.line {
+    background-color: #fff;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    height: 0.2rem;
+    width: 100%;
+}
+
+.change .line {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.change .line-1 {
+    transform: rotate(45deg) translate(0.3rem, 0.8rem);
+}
+
+.change .line-2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .line-3 {
+    transform: rotate(-45deg) translate(0.3rem, -1rem);
+}
+
+.hamburger-menu span {
+    align-items: center;
+    background-color: #e2b646;
+    color: #fff;
+    display: flex;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.6rem;
+    height: 4rem;
+    justify-content: center;
+    left: 5rem;
+    letter-spacing: 0.1rem;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s;
+    visibility: hidden;
+    width: 10rem;
+}
+
+.change .hamburger-menu:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hamburger-menu span::before {
+    border-bottom: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid #e2b646;
+    border-top: 1rem solid transparent;
+    content: "";
+    left: -2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* End of Hamburger Menu Styles */
