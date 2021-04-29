@@ -33,7 +33,7 @@ a {
     top: 5rem;
     transition: right 0.7s;
     width: 3rem;
-    z-index: 20;
+    z-index: 200;
 }
 
 .change .hamburger-menu {
@@ -219,3 +219,95 @@ a {
 }
 
 /* End of Header Styles */
+
+/* Sidebar styles */
+
+.sidebar {
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    right: -100vw;
+    top: 0;
+    transition: right 0.5s;
+    width: 100vw;
+    z-index: 100;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        right: -40rem;
+        width: 40rem;
+    }
+}
+
+.change .sidebar {
+    right: 0;
+}
+
+.menu {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-link {
+    color: #555;
+    font-family: "Baloo Da 2", serif;
+    font-size: 3rem;
+    position: relative;
+}
+
+.menu-link::before {
+    color: #c29525;
+    content: attr(data-content);
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: width 0.3s ease-in-out;
+    white-space: nowrap;
+    width: 0;
+}
+
+@media (min-width: 768px) {
+    .menu-link {
+        font-size: 4rem;
+    }
+}
+
+.menu-link:hover::before {
+    width: 100%;
+}
+
+.social-media {
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+
+.social-media i {
+    align-items: center;
+    background-color: #777;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    font-size: 2.2rem;
+    justify-content: center;
+    height: 4.5rem;
+    margin: 3rem;
+    transition: background-color 0.3s;
+    width: 4.5rem;
+}
+
+.social-media i:hover {
+    background-color: #c29525;
+}
+
+/* End of Sidebar styles */
