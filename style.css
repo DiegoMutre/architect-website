@@ -311,3 +311,42 @@ a {
 }
 
 /* End of Sidebar styles */
+
+/* Global Section styles */
+
+.section-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0 10rem 0;
+}
+
+.section-heading {
+    color: #4b4b4b;
+    font-family: "Muli", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 6rem;
+}
+
+.underline {
+    background-color: #c29525;
+    height: 0.3rem;
+    width: 7rem;
+}
+
+@media (min-width: 768px) {
+    .section-heading {
+        font-size: 5rem;
+    }
+
+    .underline {
+        width: 12rem;
+    }
+}
+
+/* End of Global Section styles */
+
+/* About us Section styles */
+
+/* End of About us Section styles */
