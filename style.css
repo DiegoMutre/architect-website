@@ -460,3 +460,118 @@ a {
 }
 
 /* End of About us Section styles */
+
+/* Team Section Styles */
+
+.team {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem 20rem 5rem;
+}
+
+.cards-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    height: 35rem;
+    position: relative;
+    width: 25rem;
+}
+
+@media (min-width: 768px) {
+    .cards-wrapper {
+        flex-direction: row;
+    }
+
+    .card {
+        height: 45rem;
+        width: 37rem;
+    }
+}
+
+.card-img-wrapper {
+    background-color: #262626;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.card-img-wrapper img {
+    border-radius: 0.5rem;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: 0.5;
+}
+
+.card-info {
+    bottom: 0;
+    opacity: 0;
+    padding: 2rem;
+    position: absolute;
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+    visibility: hidden;
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2 {
+    color: #eee;
+    font-family: "Baloo Da 2", serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.card-info h3 {
+    color: #a52a2a;
+    font-family: "Muli", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.card-info p {
+    color: #eee;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.card-info button {
+    background-color: #c29525;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.4rem;
+    height: 3rem;
+    line-height: 1.5rem;
+    width: 10rem;
+}
+
+/* End of Team Section Styles */
