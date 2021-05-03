@@ -731,3 +731,46 @@ a {
 }
 
 /* End of Contact Section Styles */
+
+/* Footer Styles */
+
+.footer {
+    align-items: center;
+    background-color: #17181b;
+    display: flex;
+    height: 15rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+}
+
+.copyright {
+    color: #a7a7a7;
+    font-family: "Baloo Da 2", serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.social-list a {
+    margin: 0 2rem;
+}
+
+.social-list i {
+    color: #a7a7a7;
+    font-size: 2rem;
+}
+
+/* End of Footer Styles */
